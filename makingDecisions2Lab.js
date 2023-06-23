@@ -6,7 +6,8 @@ var arr = [10,20,30,40,50,60]
   Create a variable named 'firstItem' and set it equal to the first value of the 'arr' array.
 */
 
-//Code Here
+let firstItem = arr[0];
+console.log(firstItem);
 
 
 ////////// PROBLEM 2 //////////
@@ -14,7 +15,8 @@ var arr = [10,20,30,40,50,60]
   Remove the last item from the 'arr' array and store it in a variable named 'lastItemRemoved'. Console.log the array to verify you no longer have the last item.
 */
 
-//Code Here
+let lastItemRemoved = arr.pop();
+console.log(arr);
 
 ////////// PROBLEM 3 //////////
 
@@ -26,9 +28,16 @@ var family = ['Tyler', 'Jordan', 'Ryan', 'Alice', 'Ireland'];
   Loop through the 'family' array and console.log every item.
 */
 
-//Code Here
+console.log(family[0]);
+console.log(family[1]);
+console.log(family[2]);
+console.log(family[3]);
+console.log(family[4]);
+console.log('***', family[family.length-1]);
 
-
+for(let i = 0; i < family.length; i++) {
+  console.log(family[i]);
+}
 
 ////////// PROBLEM 4 //////////
 
@@ -41,7 +50,14 @@ let evensArr = []
   Use a for-loop to iterate through each number in the 'nums' array, if the number is even, append it to the 'evensArr'.
 */
 
-//Code Here
+for(let num = 0; num < nums.length; num++) {
+  if(nums[num] % 2 === 0) {
+    evensArr.push(nums[num]);
+  } else {
+    console.log(nums[num]);
+  }
+}
+console.log(evensArr);
 
 
 
