@@ -209,4 +209,14 @@ switch(letterGrade) {
   ...
 */
 
-//Code Here
+for(let z = 1; z <= 100; z++) {
+  if(z % 5 === 0 && z % 3 === 0) {
+    console.log("Devmountain");
+  } else if(z % 3 === 0) {
+    console.log("Dev")
+  } else if(z % 5 === 0) {
+    console.log("mountain")
+  } else {
+    console.log(z)
+  }
+}
