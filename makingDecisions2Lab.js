@@ -121,7 +121,13 @@ var listOfNumbers = [1,2,3,4,5,6,7,8,9,10,11,12];
 
 // Use a for-loop to iterate through 'listOfNumbers', checking to see if each number is divisible by 3. If it is, console.log '{number} is divisible by 3.'
 
-//Code Here
+for(let x = 0; x < listOfNumbers.length; x++) {
+  if(listOfNumbers[x] % 3 === 0) {
+    console.log(`${listOfNumbers[x]} is divisible by 3.`)
+  } else {
+    console.log(listOfNumbers[x])
+  }
+}
 
 
 ////////// PROBLEM 9 //////////
@@ -133,7 +139,9 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
   Loop backwards, starting at the end of the 'letters' array. Console log every item in the array.
 */
 
-//Code Here
+for(let letter = letters.length-1; letter >= 0; letter--) {
+  console.log(letters[letter])
+}
 
 
 ////////// Advanced Problems //////////
